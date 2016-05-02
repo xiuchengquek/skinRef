@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Skin Reference Genes</title>
+
+
+     {% load staticfiles %}
+
+     <script src="{% static 'js/dependencies.js' %}"></script>
+     <link rel="stylesheet" href="{% static 'css/built.css' %}">
+    <style>
+    </style>
+
+
+
+
+
+</head>
+
+<body  ng-app="housekeeper" ng-controller="main_controller">
+
+
+
+
+
+
+<!--- almost not requried. -->
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h1><strong>Skin Reference Genes<br/></strong><small> Based on the study : <em> Reference genes for non-melanoma skin cancer study </em></small> </h1>
+    </div>
+</div>
+
+<div class="row" id="topRow">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8" id="geneinput">
+        <scatterplot data="scattervalue" selected="metricsinfo", found="found"></scatterplot>
+    </div>
+    <div class="col-xs-12 col-lg-4" >
+        <!-- start of accordion -->
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion"  data-target="#collapseOne">1. Introduction</a>
+                        </h3>
+                    </div>
+                    <div id="collapseOne"  class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <p>In this study, we have utilised next generation RNA sequencing to analyse the transcriptome of a panel of non-melanoma skin cancer lesions,
+                                identifying genes that are consistently expressed across all samples.
+                            we calculated the mean expression value and the coefficient of variant(CoV) of gene expression value (TPM value).
+                                The scatterplot on the left, is a plot of the mean expression value against CoV. </p>
+                            <p> To explore the data, simply,
+                                choose a point on the left or input a set of genes (HGNC Symbol)</p>
+                            <p> To download the entire dataset : <a href="">click here</a></p>
+
+                            <p> For more details on the experiement please visit </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <a data-toggle="collapse"  data-parent="#accordion" data-target="#collapseTwo">2. Input List Of Genes</a>
+                        </h3>
+                    </div>
+                    <div id="collapseTwo"   class="panel-collapse collapse">
+                          <div class="panel-body">
+
+
+                            <h4> Input Gene List</h4>
+                            <br/>
+
+                            <textarea class="form-control" rows=6 ng-model="MainCtrl.selected" ngTrim="False"></textarea>
+                            <button class="add-btn" ng-click="showGenes()">Find!</button>
+
+
+                            <div class="alert alert-danger " role="alert" ng-if="unfound.length > 0">
+                                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                                <span class="sr-only"></span>
+
+                                    On Snap! The following Gene Identifier can't be found!
+                                <ul ng-repeat="gene in unfound">[[gene]]</ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <a data-toggle="collapse"  data-parent="#accordion"   data-target="#collapseThree">3.Citation</a>
+                        </h3>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p> For Citation Please Cite :
+
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <em> click to activate panel</em>
+
+
+    </div>
+
+        <!-- end accordion-->
+
+
+
+
+<div class="col-xs-6 col-lg-4"></div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8" id="metrics">
+        <pre>Total Gene Selected [[metricsinfo.length|json]] <button ng-click="downloadData()"></button></pre>
+
+
+        <table st-safe-src="metricsinfo"  rl ="metricsinfo.length" sorticon="filtericon" st-table="metricstable" class="table table-striped table-condensed table-hover">
+            <thead>
+            <tr>
+                <th st-sort="HGNC" sort="sort" customsort sorticon="filtericon">Gene Name&nbsp<li ng-class="filtericon.HGNC"></li></th>
+                <th st-sort="mean" sort="sort" customsort sorticon="filtericon">Mean Log10TPM&nbsp<li ng-class="filtericon.mean"></li></th>
+
+
+                <th st-sort="cov" sort="sort" customsort sorticon="filtericon">CoV&nbsp<li ng-class="filtericon.cov"></li></th>
+                <th st-sort="mfc" sort="sort" customsort sorticon="filtericon">Maximum Fold Change &nbsp<li ng-class="filtericon.mfc"></li></th>
+            </tr>
+            </thead>
+
+            <tr>
+
+                <th colspan="4">
+                    <input st-search placeholder="Filter Results by gene name" class="input-sm form-control" type="search"/>
+                </th>
+            </tr>
+
+            <tbody>
+            <tr ng-repeat="item in metricstable"  ng-click="colourDot(item.HGNC)">
+                <td>[[ item.HGNC ]]</td>
+                <td>[[ item.mean ]]</td>
+                <td>[[ item.cov ]]</td>
+                <td>[[ item.mfc ]]</td>
+
+            </tr>
+                       <tr><td> click on the column to sort </td></tr>
+
+
+            </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="4" class="text-center">
+                    <div st-pagination="" st-items-by-page="15" st-displayed-pages="7"></div>
+                </td>
+            </tr>
+            </tfoot>
+        </table>
+
+
+    </div>
+    <div class="col-xs-12 col-md-12 col-lg-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">Gene Information</div>
+            <!-- List group -->
+            <ul class="list-group">
+                <li class="list-group-item"> <b>Gene Name </b>: [[geneinfo.gene_name]]</li>
+                <li class="list-group-item"> <b> Short Description : </b>[[geneinfo.description]]</li>
+            </ul>
+
+            <div class="panel-body"><b>Summary :[[geneinfo.summary]]</b>  </div>
+        </div>
+
+
+
+    </div>
+</div>
+    <a id="downloadEle" style="display:none">download</a>
+
+    <script src="{% static 'js/built/skinRefApp.built.js' %}"></script>
+
+
+</body>
+
+</html>

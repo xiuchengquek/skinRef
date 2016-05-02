@@ -1,0 +1,50 @@
+body {
+    font: 11px sans-serif;
+    padding-left:10px;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+.dot.selected {
+    fill: #F00;
+    fill-opacity: 1;
+}
+.dot {
+    fill: #000;
+}
+
+.dot.user_clicked{
+    fill: #255;
+    stroke: #FF0;
+
+
+}
+.tooltip {
+    position: absolute;
+    width: 200px;
+    height: 28px;
+    pointer-events: none;
+}
+
+.extent {
+    fill: #000;
+    fill-opacity: .125;
+    stroke: #fff;
+}
+
+#geneinput {
+    border-right: 1px ;
+
+}
+
+#topRow {
+    height: 500px;
+}
+
+textarea {
+    resize: none;
+}

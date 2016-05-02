@@ -1,0 +1,7 @@
+django==1.9
+djangorestframework
+markdown       # Markdown support for the browsable API.
+django-filter  # Filtering support
+jsonfield==1.0.3
+django-rest-swagger
+

@@ -1,0 +1,32 @@
+{
+  "name": "skinRef",
+  "version": "0.0.0",
+  "description": " portal for skinRefs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "bower": "^1.3.1",
+    "http-server": "^0.6.1",
+    "jasmine-core": "^2.3.4",
+    "karma": "~0.12",
+    "karma-chrome-launcher": "^0.1.12",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-jasmine": "^0.3.5",
+    "karma-junit-reporter": "^0.2.2",
+    "protractor": "^2.1.0",
+    "shelljs": "^0.2.6",
+    "grunt-contrib-concat" : "*",
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch" : "*",
+    "grunt-contrib-cssmin" : "*",
+    "grunt-contrib-copy" : "*"
+  }
+}
+
