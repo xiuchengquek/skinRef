@@ -14,6 +14,8 @@ app.directive('scatterplot', ['$document', function($document ){
 
 
 
+
+
             scope.render = function (data) {
 
 
@@ -220,8 +222,7 @@ app.directive('scatterplot', ['$document', function($document ){
 
 
             scope.$on('initial_loaded', function(event, data){
-                console.log(data)
-                scope.render(data)
+                scope.render(scope.data)
             });
 
 

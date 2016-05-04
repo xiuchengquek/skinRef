@@ -94,7 +94,7 @@ app.controller('main_controller', ['dataFactory', 'metricsToTSV' , '$scope', fun
 
   dataFactory.getInit().then(function (results) {
     $scope.$broadcast('initial_loaded',  results.data)
-    //$scope.scattervalue = results.data
+    $scope.scattervalue = results.data
 
   });
 }]);
