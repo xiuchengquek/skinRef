@@ -28,4 +28,4 @@ exec gunicorn ${DJANGO_WSGI_MODULE}:application \
   -u www-data --group=$GROUP \
   --bind=unix:${SOCKFILE} \
   --log-level=debug \
-  --log-file=/home/xiuque/captureseq/captureseq/gunicorn.log
+  --log-file=/home/xiuque/skinRef/skinRef/skinRef-log

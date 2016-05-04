@@ -1,0 +1,265 @@
+2016-05-02 16:57:31 [13216] [INFO] Starting gunicorn 18.0
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 9, in <module>
+    load_entry_point('gunicorn==18.0', 'console_scripts', 'gunicorn')()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 71, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/base.py", line 143, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 172, in run
+    self.start()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 134, in start
+    self.LISTENERS = create_sockets(self.cfg, self.log)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/sock.py", line 198, in create_sockets
+    sock = sock_type(addr, conf, log)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/sock.py", line 102, in __init__
+    super(UnixSocket, self).__init__(addr, conf, log, fd=fd)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/sock.py", line 31, in __init__
+    self.sock = self.set_options(sock, bound=(fd is not None))
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/sock.py", line 42, in set_options
+    self.bind(sock)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/sock.py", line 110, in bind
+    util.chown(self.cfg_addr, self.conf.uid, self.conf.gid)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/util.py", line 157, in chown
+    os.chown(path, uid, gid)
+OSError: [Errno 1] Operation not permitted: '/home/xiuque/skinRef/skinRef/gunicorn.sock'
+2016-05-02 16:58:14 [12903] [INFO] Starting gunicorn 18.0
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 9, in <module>
+    load_entry_point('gunicorn==18.0', 'console_scripts', 'gunicorn')()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 71, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/base.py", line 143, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 172, in run
+    self.start()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 134, in start
+    self.LISTENERS = create_sockets(self.cfg, self.log)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/sock.py", line 198, in create_sockets
+    sock = sock_type(addr, conf, log)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/sock.py", line 102, in __init__
+    super(UnixSocket, self).__init__(addr, conf, log, fd=fd)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/sock.py", line 31, in __init__
+    self.sock = self.set_options(sock, bound=(fd is not None))
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/sock.py", line 42, in set_options
+    self.bind(sock)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/sock.py", line 110, in bind
+    util.chown(self.cfg_addr, self.conf.uid, self.conf.gid)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/util.py", line 157, in chown
+    os.chown(path, uid, gid)
+OSError: [Errno 1] Operation not permitted: '/home/xiuque/skinRef/skinRef/gunicorn.sock'
+2016-05-02 16:59:32 [13389] [INFO] Starting gunicorn 18.0
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 9, in <module>
+    load_entry_point('gunicorn==18.0', 'console_scripts', 'gunicorn')()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 71, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/base.py", line 143, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 172, in run
+    self.start()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 134, in start
+    self.LISTENERS = create_sockets(self.cfg, self.log)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/sock.py", line 198, in create_sockets
+    sock = sock_type(addr, conf, log)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/sock.py", line 102, in __init__
+    super(UnixSocket, self).__init__(addr, conf, log, fd=fd)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/sock.py", line 31, in __init__
+    self.sock = self.set_options(sock, bound=(fd is not None))
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/sock.py", line 42, in set_options
+    self.bind(sock)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/sock.py", line 110, in bind
+    util.chown(self.cfg_addr, self.conf.uid, self.conf.gid)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/util.py", line 157, in chown
+    os.chown(path, uid, gid)
+OSError: [Errno 1] Operation not permitted: '/home/xiuque/skinRef/skinRef/gunicorn.sock'
+2016-05-02 17:02:45 [13874] [INFO] Starting gunicorn 18.0
+2016-05-02 17:02:45 [13874] [DEBUG] Arbiter booted
+2016-05-02 17:02:45 [13874] [INFO] Listening at: unix:/home/xiuque/skinRef/skinRef/gunicorn.sock (13874)
+2016-05-02 17:02:45 [13874] [INFO] Using worker: sync
+2016-05-02 17:02:45 [13906] [INFO] Booting worker with pid: 13906
+2016-05-02 17:02:45 [13910] [INFO] Booting worker with pid: 13910
+2016-05-02 17:02:45 [13909] [INFO] Booting worker with pid: 13909
+2016-05-02 17:09:05 [13906] [DEBUG] GET /
+2016-05-02 07:09:06 [13906] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 131, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/wsgi.py", line 187, in __call__
+    self.load_middleware()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 45, in load_middleware
+    mw_class = import_by_path(middleware_path)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/module_loading.py", line 31, in import_by_path
+    error_prefix, module_path, class_name))
+ImproperlyConfigured: Module "django.contrib.auth.middleware" does not define a "SessionAuthenticationMiddleware" attribute/class
+2016-05-02 07:09:06 [13906] [DEBUG] GET /favicon.ico
+2016-05-02 07:09:06 [13906] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 131, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/wsgi.py", line 187, in __call__
+    self.load_middleware()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 45, in load_middleware
+    mw_class = import_by_path(middleware_path)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/module_loading.py", line 31, in import_by_path
+    error_prefix, module_path, class_name))
+ImproperlyConfigured: Module "django.contrib.auth.middleware" does not define a "SessionAuthenticationMiddleware" attribute/class
+2016-05-02 17:13:37 [13910] [INFO] Worker exiting (pid: 13910)
+2016-05-02 17:13:37 [13874] [INFO] Handling signal: term
+2016-05-02 07:13:37 [13906] [INFO] Worker exiting (pid: 13906)
+2016-05-02 17:13:37 [13874] [INFO] Shutting down: Master
+[2016-05-02 17:13:38 +0000] [14859] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7f9318e17230>
+  pythonpath: None
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7f9318e0eed8>
+  pre_fork: <function pre_fork at 0x7f9318e170c8>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: None
+  group: 33
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 3
+  proc_name: None
+  sendfile: None
+  pidfile: None
+  umask: 0
+  on_reload: <function on_reload at 0x7f9318e0ed70>
+  pre_exec: <function pre_exec at 0x7f9318e177d0>
+  worker_tmp_dir: None
+  post_worker_init: <function post_worker_init at 0x7f9318e17398>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x7f9318e17e60>
+  config: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7f9318e17938>
+  post_request: <function post_request at 0x7f9318e17a28>
+  user: 33
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7f9318e17500>
+  threads: 1
+  max_requests: 0
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x7f9318e17b90>
+  chdir: /home/xiuque/skinRef/skinRef
+  paste: None
+  default_proc_name: skinRef.wsgi:application
+  errorlog: /home/xiuque/skinRef/skinRef/skinRef-log
+  loglevel: debug
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  daemon: False
+  ciphers: TLSv1
+  on_starting: <function on_starting at 0x7f9318e0ec08>
+  worker_abort: <function worker_abort at 0x7f9318e17668>
+  bind: ['unix:/home/xiuque/skinRef/skinRef/gunicorn.sock']
+  raw_env: []
+  reload: False
+  check_config: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7f9318e17cf8>
+  timeout: 30
+  ca_certs: None
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+  statsd_prefix: 
+[2016-05-02 17:13:38 +0000] [14859] [INFO] Starting gunicorn 19.4.5
+[2016-05-02 17:13:38 +0000] [14859] [DEBUG] Arbiter booted
+[2016-05-02 17:13:38 +0000] [14859] [INFO] Listening at: unix:/home/xiuque/skinRef/skinRef/gunicorn.sock (14859)
+[2016-05-02 17:13:38 +0000] [14859] [INFO] Using worker: sync
+[2016-05-02 17:13:38 +0000] [14869] [INFO] Booting worker with pid: 14869
+[2016-05-02 17:13:38 +0000] [14870] [INFO] Booting worker with pid: 14870
+[2016-05-02 17:13:38 +0000] [14875] [INFO] Booting worker with pid: 14875
+[2016-05-02 17:13:38 +0000] [14859] [DEBUG] 3 workers
+[2016-05-02 07:13:41 +0000] [14869] [DEBUG] GET /
+[2016-05-02 07:13:42 +0000] [14869] [DEBUG] GET /static/css/built.css
+[2016-05-02 07:13:42 +0000] [14875] [DEBUG] GET /static/js/dependencies.js
+[2016-05-02 07:13:42 +0000] [14870] [DEBUG] GET /static/js/built/skinRefApp.built.js
+[2016-05-02 07:13:43 +0000] [14869] [DEBUG] GET /rest/metrics/
+[2016-05-02 07:13:43 +0000] [14875] [DEBUG] GET /static/fonts/glyphicons-halflings-regular.woff2
+[2016-05-02 07:13:43 +0000] [14875] [DEBUG] GET /favicon.ico
+[2016-05-03 01:02:43 +0000] [14875] [DEBUG] GET /
+[2016-05-03 01:02:44 +0000] [14875] [DEBUG] GET /static/css/built.css
+[2016-05-03 01:02:44 +0000] [14875] [DEBUG] GET /static/js/dependencies.js
+[2016-05-03 01:02:44 +0000] [14869] [DEBUG] GET /static/js/built/skinRefApp.built.js
+[2016-05-03 01:02:44 +0000] [14869] [DEBUG] GET /rest/metrics/
+[2016-05-03 01:02:44 +0000] [14870] [DEBUG] GET /static/fonts/glyphicons-halflings-regular.woff2
+[2016-05-03 01:02:44 +0000] [14870] [DEBUG] GET /favicon.ico
+[2016-05-03 01:05:15 +0000] [14870] [DEBUG] GET /
+[2016-05-03 01:05:16 +0000] [14869] [DEBUG] GET /rest/metrics/
+[2016-05-04 04:03:34 +0000] [14870] [DEBUG] GET /
+[2016-05-04 04:03:34 +0000] [14870] [DEBUG] GET /static/js/dependencies.js
+[2016-05-04 04:03:34 +0000] [14869] [DEBUG] GET /static/css/built.css
+[2016-05-04 04:03:34 +0000] [14875] [DEBUG] GET /static/js/built/skinRefApp.built.js
+[2016-05-04 04:03:34 +0000] [14870] [DEBUG] GET /rest/metrics/
+[2016-05-04 04:03:34 +0000] [14875] [DEBUG] GET /static/fonts/glyphicons-halflings-regular.woff2
+[2016-05-04 04:04:09 +0000] [14875] [DEBUG] GET /rest/description/
+[2016-05-04 04:04:10 +0000] [14875] [DEBUG] GET /rest/description/
+[2016-05-04 04:04:12 +0000] [14869] [DEBUG] GET /rest/description/
+[2016-05-04 04:04:13 +0000] [14870] [DEBUG] GET /rest/description/
+[2016-05-04 04:04:14 +0000] [14869] [DEBUG] GET /rest/description/
+[2016-05-04 04:04:15 +0000] [14870] [DEBUG] GET /rest/description/
+[2016-05-04 04:04:16 +0000] [14875] [DEBUG] GET /rest/description/
+[2016-05-04 04:04:16 +0000] [14869] [DEBUG] GET /rest/description/
+[2016-05-04 04:04:17 +0000] [14869] [DEBUG] GET /rest/description/
+[2016-05-04 04:04:17 +0000] [14875] [DEBUG] GET /rest/description/
+[2016-05-04 04:04:18 +0000] [14870] [DEBUG] GET /rest/description/
+[2016-05-04 04:04:23 +0000] [14875] [DEBUG] GET /rest/description/
+[2016-05-04 04:18:13 +0000] [14870] [DEBUG] GET /rest/description/
+[2016-05-04 04:18:14 +0000] [14869] [DEBUG] GET /rest/description/
+[2016-05-04 04:18:52 +0000] [14869] [DEBUG] GET /rest/description/
+[2016-05-04 04:27:55 +0000] [14869] [DEBUG] GET /rest/description/
+[2016-05-04 04:27:55 +0000] [14875] [DEBUG] GET /rest/description/
+[2016-05-04 04:27:55 +0000] [14870] [DEBUG] GET /rest/description/
+[2016-05-04 04:27:55 +0000] [14875] [DEBUG] GET /rest/description/
+[2016-05-04 04:27:57 +0000] [14870] [DEBUG] GET /rest/description/
+[2016-05-04 04:27:57 +0000] [14869] [DEBUG] GET /rest/description/
+[2016-05-04 04:27:57 +0000] [14875] [DEBUG] GET /rest/description/
+[2016-05-04 04:28:01 +0000] [14869] [DEBUG] GET /rest/description/
+[2016-05-04 04:55:32 +0000] [14870] [DEBUG] GET /
+[2016-05-04 04:55:32 +0000] [14870] [DEBUG] GET /
+[2016-05-04 04:55:33 +0000] [14870] [DEBUG] GET /
+[2016-05-04 04:55:33 +0000] [14869] [DEBUG] GET /
+[2016-05-04 04:55:37 +0000] [14870] [DEBUG] GET /
+[2016-05-04 04:55:38 +0000] [14870] [DEBUG] GET /rest/metrics/
+[2016-05-04 04:55:38 +0000] [14875] [DEBUG] GET /static/fonts/glyphicons-halflings-regular.woff2
+[2016-05-04 05:00:40 +0000] [14875] [DEBUG] GET /
+[2016-05-04 05:00:41 +0000] [14875] [DEBUG] GET /static/js/dependencies.js
+[2016-05-04 05:00:41 +0000] [14869] [DEBUG] GET /static/css/built.css
+[2016-05-04 05:00:41 +0000] [14870] [DEBUG] GET /static/js/built/skinRefApp.built.js
+[2016-05-04 05:00:41 +0000] [14869] [DEBUG] GET /rest/metrics/
+[2016-05-04 05:00:41 +0000] [14875] [DEBUG] GET /static/fonts/glyphicons-halflings-regular.woff2
+[2016-05-04 05:00:48 +0000] [14875] [DEBUG] GET /rest/description/
+[2016-05-04 05:01:13 +0000] [14870] [DEBUG] GET /
+[2016-05-04 05:01:13 +0000] [14870] [DEBUG] GET /static/css/built.css
+[2016-05-04 05:01:13 +0000] [14869] [DEBUG] GET /static/js/dependencies.js
+[2016-05-04 05:01:13 +0000] [14875] [DEBUG] GET /static/js/built/skinRefApp.built.js
+[2016-05-04 05:01:14 +0000] [14875] [DEBUG] GET /rest/metrics/
+[2016-05-04 05:01:14 +0000] [14869] [DEBUG] GET /static/fonts/glyphicons-halflings-regular.woff2
+[2016-05-04 05:01:27 +0000] [14875] [DEBUG] GET /static/js/smart-table.min.js.map
+[2016-05-04 05:04:22 +0000] [14869] [DEBUG] GET /
+[2016-05-04 05:04:23 +0000] [14869] [DEBUG] GET /static/js/dependencies.js
+[2016-05-04 05:04:23 +0000] [14870] [DEBUG] GET /static/js/built/skinRefApp.built.js
+[2016-05-04 05:04:23 +0000] [14875] [DEBUG] GET /static/css/built.css
+[2016-05-04 05:04:23 +0000] [14869] [DEBUG] GET /static/js/smart-table.min.js.map
+[2016-05-04 05:04:23 +0000] [14870] [DEBUG] GET /rest/metrics/
+[2016-05-04 05:04:23 +0000] [14875] [DEBUG] GET /static/fonts/glyphicons-halflings-regular.woff2

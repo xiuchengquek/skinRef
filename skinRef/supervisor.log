@@ -1,0 +1,211 @@
+/home/xiuque/skinRef/skinRef
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 9, in <module>
+    load_entry_point('gunicorn==18.0', 'console_scripts', 'gunicorn')()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 71, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/base.py", line 143, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 59, in __init__
+    self.setup(app)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 90, in setup
+    self.log = self.cfg.logger_class(app.cfg)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/glogging.py", line 165, in __init__
+    self.setup(cfg)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/glogging.py", line 179, in setup
+    self.logfile = open(cfg.errorlog, 'a+')
+IOError: [Errno 13] Permission denied: '/home/xiuque/skinRef/skinRef/skinRef-log'
+/home/xiuque/skinRef/skinRef
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 9, in <module>
+    load_entry_point('gunicorn==18.0', 'console_scripts', 'gunicorn')()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 71, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/base.py", line 143, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 59, in __init__
+    self.setup(app)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 90, in setup
+    self.log = self.cfg.logger_class(app.cfg)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/glogging.py", line 165, in __init__
+    self.setup(cfg)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/glogging.py", line 179, in setup
+    self.logfile = open(cfg.errorlog, 'a+')
+IOError: [Errno 13] Permission denied: '/home/xiuque/skinRef/skinRef/skinRef-log'
+/home/xiuque/skinRef/skinRef
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 9, in <module>
+    load_entry_point('gunicorn==18.0', 'console_scripts', 'gunicorn')()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 71, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/base.py", line 143, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 59, in __init__
+    self.setup(app)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 90, in setup
+    self.log = self.cfg.logger_class(app.cfg)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/glogging.py", line 165, in __init__
+    self.setup(cfg)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/glogging.py", line 179, in setup
+    self.logfile = open(cfg.errorlog, 'a+')
+IOError: [Errno 13] Permission denied: '/home/xiuque/skinRef/skinRef/skinRef-log'
+/home/xiuque/skinRef/skinRef
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 9, in <module>
+    load_entry_point('gunicorn==18.0', 'console_scripts', 'gunicorn')()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 71, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/base.py", line 143, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 59, in __init__
+    self.setup(app)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 90, in setup
+    self.log = self.cfg.logger_class(app.cfg)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/glogging.py", line 165, in __init__
+    self.setup(cfg)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/glogging.py", line 179, in setup
+    self.logfile = open(cfg.errorlog, 'a+')
+IOError: [Errno 13] Permission denied: '/home/xiuque/skinRef/skinRef/skinRef-log'
+/home/xiuque/skinRef/skinRef
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 9, in <module>
+    load_entry_point('gunicorn==18.0', 'console_scripts', 'gunicorn')()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 71, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/base.py", line 143, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 59, in __init__
+    self.setup(app)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 90, in setup
+    self.log = self.cfg.logger_class(app.cfg)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/glogging.py", line 165, in __init__
+    self.setup(cfg)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/glogging.py", line 179, in setup
+    self.logfile = open(cfg.errorlog, 'a+')
+IOError: [Errno 13] Permission denied: '/home/xiuque/skinRef/skinRef/skinRef-log'
+/home/xiuque/skinRef/skinRef
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 9, in <module>
+    load_entry_point('gunicorn==18.0', 'console_scripts', 'gunicorn')()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 71, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/base.py", line 143, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 59, in __init__
+    self.setup(app)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 90, in setup
+    self.log = self.cfg.logger_class(app.cfg)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/glogging.py", line 165, in __init__
+    self.setup(cfg)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/glogging.py", line 179, in setup
+    self.logfile = open(cfg.errorlog, 'a+')
+IOError: [Errno 13] Permission denied: '/home/xiuque/skinRef/skinRef/skinRef-log'
+/home/xiuque/skinRef/skinRef
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 9, in <module>
+    load_entry_point('gunicorn==18.0', 'console_scripts', 'gunicorn')()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 71, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/base.py", line 143, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 59, in __init__
+    self.setup(app)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 90, in setup
+    self.log = self.cfg.logger_class(app.cfg)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/glogging.py", line 165, in __init__
+    self.setup(cfg)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/glogging.py", line 179, in setup
+    self.logfile = open(cfg.errorlog, 'a+')
+IOError: [Errno 13] Permission denied: '/home/xiuque/skinRef/skinRef/skinRef-log'
+/home/xiuque/skinRef/skinRef
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 9, in <module>
+    load_entry_point('gunicorn==18.0', 'console_scripts', 'gunicorn')()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 71, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/base.py", line 143, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 59, in __init__
+    self.setup(app)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 90, in setup
+    self.log = self.cfg.logger_class(app.cfg)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/glogging.py", line 165, in __init__
+    self.setup(cfg)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/glogging.py", line 179, in setup
+    self.logfile = open(cfg.errorlog, 'a+')
+IOError: [Errno 13] Permission denied: '/home/xiuque/skinRef/skinRef/skinRef-log'
+/home/xiuque/skinRef/skinRef
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 9, in <module>
+    load_entry_point('gunicorn==18.0', 'console_scripts', 'gunicorn')()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 71, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/base.py", line 143, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 59, in __init__
+    self.setup(app)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 90, in setup
+    self.log = self.cfg.logger_class(app.cfg)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/glogging.py", line 165, in __init__
+    self.setup(cfg)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/glogging.py", line 179, in setup
+    self.logfile = open(cfg.errorlog, 'a+')
+IOError: [Errno 13] Permission denied: '/home/xiuque/skinRef/skinRef/skinRef-log'
+/home/xiuque/skinRef/skinRef
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 9, in <module>
+    load_entry_point('gunicorn==18.0', 'console_scripts', 'gunicorn')()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 71, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/base.py", line 143, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 59, in __init__
+    self.setup(app)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 90, in setup
+    self.log = self.cfg.logger_class(app.cfg)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/glogging.py", line 165, in __init__
+    self.setup(cfg)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/glogging.py", line 179, in setup
+    self.logfile = open(cfg.errorlog, 'a+')
+IOError: [Errno 13] Permission denied: '/home/xiuque/skinRef/skinRef/skinRef-log'
+/home/xiuque/skinRef/skinRef
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 9, in <module>
+    load_entry_point('gunicorn==18.0', 'console_scripts', 'gunicorn')()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 71, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/base.py", line 143, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 59, in __init__
+    self.setup(app)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 90, in setup
+    self.log = self.cfg.logger_class(app.cfg)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/glogging.py", line 165, in __init__
+    self.setup(cfg)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/glogging.py", line 179, in setup
+    self.logfile = open(cfg.errorlog, 'a+')
+IOError: [Errno 13] Permission denied: '/home/xiuque/skinRef/skinRef/skinRef-log'
+/home/xiuque/skinRef/skinRef
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 9, in <module>
+    load_entry_point('gunicorn==18.0', 'console_scripts', 'gunicorn')()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 71, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/app/base.py", line 143, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 59, in __init__
+    self.setup(app)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 90, in setup
+    self.log = self.cfg.logger_class(app.cfg)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/glogging.py", line 165, in __init__
+    self.setup(cfg)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/glogging.py", line 179, in setup
+    self.logfile = open(cfg.errorlog, 'a+')
+IOError: [Errno 13] Permission denied: '/home/xiuque/skinRef/skinRef/skinRef-log'
+/home/xiuque/skinRef/skinRef
+/home/xiuque/skinRef/skinRef
+/home/xiuque/skinRef/skinRef
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /static/js/smart-table.min.js.map
+Not Found: /static/js/smart-table.min.js.map
