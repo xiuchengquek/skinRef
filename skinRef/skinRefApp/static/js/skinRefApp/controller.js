@@ -9,6 +9,16 @@ app.controller('main_controller', ['dataFactory', 'metricsToTSV' , '$scope', fun
   $scope.unfound = [];
   $scope.found = [];
 
+
+  $scope.axis = {
+    xaxis : 'mean',
+    yaxis : 'cov'
+  };
+
+
+
+
+
   $scope.showGenes = function () {
     var selectedpoints = [];
     var found = [];

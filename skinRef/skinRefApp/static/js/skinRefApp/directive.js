@@ -7,7 +7,9 @@ app.directive('scatterplot', ['$document', function($document ){
     return  {restrict: 'E',
         scope: {
             'data' : '=',
-            'selected' : '='
+            'selected' : '=',
+            'xaxis' : '@',
+            'yaxis' : '@'
 
         },
         link: function(scope, element, attr) {
@@ -16,7 +18,7 @@ app.directive('scatterplot', ['$document', function($document ){
 
 
 
-            scope.render = function (data) {
+            scope.render = function (data, xaxis, yaxis) {
 
 
                 $('svg').remove()
@@ -68,10 +70,11 @@ app.directive('scatterplot', ['$document', function($document ){
 
 
                 var sampleData = data.map(function (d) {
+
                     var datapoint = {};
                     datapoint.id = d.hgnc;
-                    datapoint.x = d.mean;
-                    datapoint.y = d.cov;
+                    datapoint.x = d[xaxis];
+                    datapoint.y = d[yaxis];
                     datapoint.hgnc = d.hgnc;
                     datapoint.mfc = d.mfc;
                     return datapoint
@@ -222,7 +225,7 @@ app.directive('scatterplot', ['$document', function($document ){
 
 
             scope.$on('initial_loaded', function(event, data){
-                scope.render(scope.data)
+                scope.render(data, scope.xaxis, scope.yaxis)
             });
 
 
@@ -242,8 +245,28 @@ app.directive('scatterplot', ['$document', function($document ){
             scope.$watch(function () {
                 return angular.element(window)[0].innerWidth;
             }, function () {
-                scope.render(scope.data);
+                scope.render(scope.data, scope.xaxis, scope.yaxis);
             });
+
+
+
+
+            scope.$watch('xaxis', function(newVal, oldVal){
+                if (angular.isDefined(scope.data)){
+                    scope.render(scope.data, scope.xaxis, scope.yaxis)
+                }
+
+            });
+
+
+
+            scope.$watch('yaxis', function(newVal, oldVal){
+                if (angular.isDefined(scope.data)){
+                    scope.render(scope.data, scope.xaxis, scope.yaxis)
+                }            })
+
+
+
 
 
 
@@ -292,7 +315,6 @@ app.directive('rl', [function(){
         },
         link: function(scope, ele, att){
             scope.$watch('rl', function(newVal){
-                    console.log(scope.rl)
                     scope.sorticon  = {
                         'HGNC' : 'glyphicon glyphicon-sort',
                         'mean' :'glyphicon glyphicon-sort',

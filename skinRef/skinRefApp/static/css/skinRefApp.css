@@ -48,3 +48,24 @@ body {
 textarea {
     resize: none;
 }
+
+.axisform {
+    padding-left : 20px;
+    height : 100%;
+    position:relative;
+    top:0px;
+}
+
+
+input[type="radio"] {
+  margin-top: 1px;
+  vertical-align: middle;
+}
+
+
+
+.download {
+
+    font-size: x-small;
+
+}
